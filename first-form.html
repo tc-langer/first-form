@@ -30,6 +30,19 @@
     <label for="Jets">Jets</label>
   </fieldset>
   <div>
+    <label for="beans">How many beans can you eat?</label>
+    <input type="range" name="beans" id="beans" min="10" max="100" step="10" />
+    <output class="beancount"></output>
+    <script>
+      var beans = document.querySelector('#beans');
+      var count = document.querySelector('.beancount');
+      count.textContent = beans.value;
+      beans.oninput = function() {
+        count.textContent = beans.value;
+      };
+    </script>
+  </div>
+  <div>
     <input type="submit" />
   </div>
 </form>
