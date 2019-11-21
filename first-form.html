@@ -6,7 +6,7 @@
   </div>
   <div>
     <label for="date-of-birth">Date of Birth:</label>
-    <input type="date" id="date-of-birth" name="date_born" />
+    <input type="date" id="date-of-birth" name="date_born" required />
   </div>
   <div>
     <label for="favorite-num">Favorite Number:</label>
@@ -15,5 +15,21 @@
   <div>
     <label for="linkedin">LinkedIn Profile:</label>
     <input type="url" id="linkedin" name="user_linkedinprofile" />
+  </div>
+  <fieldset>
+    <legend>Choose your team</legend>
+    <div>
+      <input type="checkbox" id="Patriots" name="team" value="Patriots" />
+      <label for="Patriots">Patriots</label>
+    </div>
+    <div>
+      <input type="checkbox" id="Jaguars" name="team" value="Jaguars" />
+      <label for="Jaguars">Jaguars</label>
+    </div>
+    <input type="checkbox" id="Jets" name="team" value="Jets" />
+    <label for="Jets">Jets</label>
+  </fieldset>
+  <div>
+    <input type="submit" />
   </div>
 </form>
